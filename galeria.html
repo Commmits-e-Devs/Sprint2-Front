@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./gameria.css">
+  <title>Gallery</title>
+</head>
+
+<body>
+
+  <div class="phone">
+
+    <div class="gallery-header">
+      <div class="gallery-title">Gallery</div>
+      <div class="tabs-row">
+        <span class="tab active" onclick="switchTab(this)">All</span>
+        <span class="tab" onclick="switchTab(this)">Photos</span>
+        <span class="tab" onclick="switchTab(this)">Videos</span>
+      </div>
+    </div>
+
+    <div class="gallery-grid">
+      <div class="photo-cell"></div>
+      <div class="photo-cell"></div>
+      <div class="photo-cell"></div>
+      <div class="photo-cell"></div>
+      <div class="photo-cell"></div>
+      <div class="photo-cell"></div>
+      <div class="photo-cell"></div>
+      <div class="photo-cell"></div>
+      <div class="photo-cell"></div>
+    </div>
+
+    <div class="bottom-bar">
+      <div class="bottom-icon">☰</div>
+      <span class="photos-count">9 fotos</span>
+      <div class="bottom-icon">⊕</div>
+    </div>
+
+  </div>
+
+  <script>
+    function switchTab(el) {
+      document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+      el.classList.add('active');
+    }
+  </script>
+
+</body>
+
+</html>
